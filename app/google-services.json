@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1034671373934",
+    "firebase_url": "https://btk-transport-3a360-default-rtdb.firebaseio.com",
+    "project_id": "btk-transport-3a360",
+    "storage_bucket": "btk-transport-3a360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034671373934:android:22ed9228c19dd840d3b07f",
+        "android_client_info": {
+          "package_name": "com.bahria.driverapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034671373934-kietc19k8pnp23gb0a56rdtuqhcd1q1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMObsBwYnH06o3WSGoW18j66FJvka1y5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034671373934-kietc19k8pnp23gb0a56rdtuqhcd1q1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034671373934:android:4967dd4dcd0511afd3b07f",
+        "android_client_info": {
+          "package_name": "com.bahria.shuttle_passenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034671373934-kietc19k8pnp23gb0a56rdtuqhcd1q1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMObsBwYnH06o3WSGoW18j66FJvka1y5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034671373934-kietc19k8pnp23gb0a56rdtuqhcd1q1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

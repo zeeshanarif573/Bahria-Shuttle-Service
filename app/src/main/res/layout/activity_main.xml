@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.bahria.shuttle_passenger.ui.MainActivity">
+
+        <include
+            android:id="@+id/top_layout"
+            layout="@layout/top_layout" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/routesView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_20ssp"
+            app:layout_constraintBottom_toTopOf="@+id/view_all"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top_layout" />
+
+        <TextView
+            android:id="@+id/view_all"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40ssp"
+            android:layout_margin="@dimen/_10ssp"
+            android:background="@drawable/outline_border"
+            android:backgroundTint="@color/light_blue"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/view_all_buses"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

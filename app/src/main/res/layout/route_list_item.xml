@@ -1,0 +1,37 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/profileInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10ssp"
+        app:cardCornerRadius="@dimen/_2ssp">
+
+        <TextView
+            android:id="@+id/route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_5ssp"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="1"
+            android:text="Jinnah Avenue to Bahria Sports City"
+            android:textSize="@dimen/_13ssp"
+            app:drawableLeftCompat="@drawable/ic_route_svgrepo_com"
+            app:drawableTint="@color/light_blue" />
+
+        <TextView
+            android:id="@+id/busNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/route"
+            android:drawablePadding="@dimen/_5ssp"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="1"
+            android:text="Bus No: JF-1234"
+            android:textSize="@dimen/_12ssp"
+            app:drawableLeftCompat="@drawable/ic_bus_svgrepo_com"
+            app:drawableTint="@color/light_blue" />
+
+    </RelativeLayout>
+
+</layout>

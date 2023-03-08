@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/top_layout"
+            layout="@layout/top_layout" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top_layout"
+            tools:context=".ui.MainActivity" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/driverDetailCardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:layout_marginEnd="@dimen/_10ssp"
+            android:layout_marginBottom="@dimen/_20ssp"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/_3ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10ssp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/icon"
+                        android:layout_width="@dimen/_35ssp"
+                        android:layout_height="@dimen/_35ssp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_driver" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10ssp"
+                        android:layout_marginEnd="@dimen/_10ssp"
+                        android:layout_toEndOf="@+id/icon"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingEnd="@dimen/_5ssp"
+                        android:text="Driver: Muhammad Hamza"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <TextView
+                        android:id="@+id/busNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name"
+                        android:layout_marginStart="@dimen/_10ssp"
+                        android:layout_marginEnd="@dimen/_10ssp"
+                        android:layout_toEndOf="@+id/icon"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingEnd="@dimen/_5ssp"
+                        android:text="Bus No: JF-1234"
+                        android:textSize="@dimen/_10ssp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/contactNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:layout_weight="1.5"
+                        android:drawablePadding="@dimen/_3ssp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingEnd="@dimen/_5ssp"
+                        android:text="@string/contact_driver"
+                        android:textSize="@dimen/_10ssp"
+                        app:drawableLeftCompat="@drawable/ic_baseline_call_24"
+                        tools:ignore="RtlSymmetry" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:background="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/route"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10ssp"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/_3ssp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingEnd="@dimen/_5ssp"
+                        android:text="Route 1"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/_8ssp"
+                        app:drawableLeftCompat="@drawable/ic_route_svgrepo_com"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

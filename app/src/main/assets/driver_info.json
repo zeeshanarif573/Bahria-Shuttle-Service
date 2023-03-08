@@ -1,0 +1,29 @@
+[
+  {
+    "busNo": "ABC-123",
+    "cellNo": "03001234567",
+    "cnic": "421011234678",
+    "latitude": "25.135133135550696",
+    "longitude": "67.35669445472435",
+    "name": "Shahbaz Khan",
+    "route": "Jinnah Avenue to Eifel Tower"
+  },
+  {
+    "busNo": "MNM-556",
+    "cellNo": "03331234567",
+    "cnic": "4220143712888",
+    "latitude": "25.09345714462137",
+    "longitude": "67.3466276134749",
+    "name": "Usama Ahmed",
+    "route": "Jinnah Avenue to Bahria Golf City"
+  },
+  {
+    "busNo": "BBK-314",
+    "cellNo": "03412361687",
+    "cnic": "4220143712889",
+    "latitude": "25.001047107537268",
+    "longitude": "67.31577647702835",
+    "name": "Muhammad Saad",
+    "route": "Jinnah Avenue to Maintenance & Services"
+  }
+]

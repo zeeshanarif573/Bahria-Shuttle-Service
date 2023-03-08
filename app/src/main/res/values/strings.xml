@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bahria Intra Bus Service</string>
+    <string name="shuttle_tracking">Bahria Shuttle Tracking</string>
+    <string name="driver_offline">Driver is Offline</string>
+    <string name="contact_driver">Contact Driver</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="view_all_buses">View All Buses</string>
+</resources>

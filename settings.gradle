@@ -1,0 +1,3 @@
+
+rootProject.name = "Bahria-Shuttle-Passenger"
+include ':app'
